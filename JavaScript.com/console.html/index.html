@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos JavaScript</title>
+</head>
+<body>
+    <h1>Fundamento JavaScript</h1>
+
+    <script>
+
+var hola = "Hola Mundo";
+let hello = "Hello World"
+console.log(hola);
+console.log(hello);
+console.log(window);
+console.log(window.hola);
+console.log(window.hello);
+
+
+
+// COmentario de una sola línea
+/*Comentario de varias lineaas*/
+
+//Ambito del bloque
+console.log("*****************VAR*********");
+    var musica = "Pop";
+
+var musica = "Rock";
+    console.log("Variable música antes del Bloque", musica);
+{
+    /*esta var musica es ! que el de arriba porque esta fuera de las llaves*/
+
+    console.log("Variable Musica dentro del Bloque", musica);
+}
+    console.log("Variable Música despues del Bloque", musica);
+
+
+//Ambito del bloque 2
+console.log("***************LET*********");
+
+let musica2 = "Rock";
+console.log("Variable música antes del Bloque", musica2);
+{
+    /*estE LET musica es ! que el de arriba
+    porque esta fuera de las llaves*/
+
+    let musica2 = "Pop";
+    console.log("Variable Musica dentro del Bloque", musica2);
+}
+    console.log("Variable Música despues del Bloque", musica2);
+
+
+/* CONSTANTES. 
+    NO se puede cambiar la asignación de una CONSTANTE Simple.
+    Si que se pueden cambiar en CONSTANTES compuestas
+*/
+const PI = 3.1416;
+console.log(PI);
+        //  {} Objetos
+let objeto ={
+nombre:"Jon",
+edad: 35
+}
+        // []  Array   arreglo
+let colores = ["Blanco", "Negro", "Azul"]; //Es un arreglo
+
+console.log(objeto);
+console.log(colores);
+
+//AÑADIR  en una constante que se suponia que no se podia añadir.
+objeto.correo = "200093@iessierradeguara.com";
+colores.push("anaranjado"); // PUSH  es una funcion que tiene los arreglos para añadir
+
+console.log(objeto);
+console.log(colores);
+
+
+//Cadena de texto
+
+let nombre ="Jon";
+let apellido = "Mir";
+let saludo = new String ("Hola Mundo");  // NEW  permite crear un o
+
+//objeto nuevo de un cierto dato
+let  lorem = "Lorem ipsum, bla blabla  bla  bla amet      ";           
+ console.log(nombre, apellido,saludo);
+
+ console.log(nombre.length,
+             apellido.length,
+             saludo.length, //  saludo.length  para saber cuantas letras tiene 
+             
+             nombre.toLocaleUpperCase(),
+             apellido.toLocaleLowerCase(),//  Forzar al usuario a escribir solo es mayusculas
+
+             lorem.includes("amet"), // Encontrar una coincidencia
+             lorem.includes("Nuria"),
+             lorem,
+             lorem.trim(), // Quitar los espacios en blanco al rededorr del texto
+             lorem.split(" "), // Separa cada espacio en blanco que encuentra
+             lorem.split(" , ")//POne una coma en cada espacio
+
+             
+             ); 
+                          
+         
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<div class="contenedor">
+<div class= "header">
+
+    <p class="logo"> Estoy estudiando......</p>
+</div>
+<div class="contenido">
+    <div class="principal">
+
+        <h1>Apendiendo con las variables</h1>
+
+<script>
+
+    var nombre ="Nuria";
+    var apellido = "Mendo";
+
+    document.write("<p>");
+    document.write(nombre + " " + apellido); // Muestra siempre este nombre, es fijo.
+    document.write("</p>");
+
+document.write("**************");
+
+    var nombre =prompt("Introduce tu nombre, por favor"); // Personalizado en pantalla aparecerá el nombre introducido
+    var apellido = prompt("Introduce tu apellido, por favor");
+    var edad = prompt("Introduce tu edad");
+    var restando = prompt("Cuántos años querrías quitarte");
+    edad-=restando; // -= es restar lo que está en la variable
+                    // += es sumar lo que está en la varianble. edad+=3
+                    // *= Multiplica   edad*=4
+                    //  /= Divide      edad/=4
+                    // ++ Incrementa en 1 el valor de la variable    edad ++
+                    // -- Decrementa en 1 el valor de la variable.   edad--
+    document.write("<p>");
+    document.write("Bienvenid@: " + nombre + " " + apellido + "<br/>" + " Te gustaría tener " + edad + " años");
+    document.write("</p>");
+
+
+    </script>
+
+    </div>
+
+</div>
+</div>
+
+
+</body>
+</html>
